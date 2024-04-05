@@ -1,13 +1,14 @@
 name: Validate Markdown
 
 on:
-  # Trigger the workflow on pull request
-  pull_request_target:
-    branches: 
-      - main
-    paths:
-      - '**.md'
-      - '**.ipynb'
+  workflow_dispatch:
+  # # Trigger the workflow on pull request
+  # pull_request_target:
+  #   branches: 
+  #     - main
+  #   paths:
+  #     - '**.md'
+  #     - '**.ipynb'
 
 permissions:
   contents: read

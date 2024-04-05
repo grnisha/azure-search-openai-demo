@@ -1,14 +1,15 @@
 name: Frontend linting
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - "app/frontend/**"
-  pull_request:
-    branches: [ main ]
-    paths:
-      - "app/frontend/**"
+  # push:
+  #   branches: [ main ]
+  #   paths:
+  #     - "app/frontend/**"
+  # pull_request:
+  #   branches: [ main ]
+  #   paths:
+  #     - "app/frontend/**"
+  workflow_dispatch:
 
 jobs:
     prettier:
